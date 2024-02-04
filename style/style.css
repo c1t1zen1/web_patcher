@@ -1,13 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../Rice.png'); 
+    background-size: cover; 
+    background-position: top center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;     
+    background-color: #003a4d;
+    color: black;
+}
 .node {
+    -webkit-appearance: none; 
+    -moz-appearance: none;  
     border: 1px solid black;
+    border-radius: 4px;
     position: absolute;
-    padding: 30px 10px 5px 10px;
+    padding: 30px 10px 10px 10px;
     background-color: lightgray;
     display: inline-grid;
-    min-width: 5.5em;
     --webkit-user-select: none;
     user-select: none;
     width: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.node input {
+    display: block;
+    width: 100%
 }
 .input-container {
     position: absolute;
@@ -17,15 +41,15 @@
     white-space: nowrap;
     overflow-x: auto;
 }
-.output-container {
-    margin-top: 8px;
+.input-container button {
+    padding: 0px 3px; 
 }
-body {
-    font-family: 'Monaco', monospace;
+.output-container button {
+    padding: 0px 3px;
 }
 #workspace {
-    width: 5000px;
-    height: 10000px;
+    width: 1880px;
+    height: 1180px;
     position: relative;
     overflow: auto;
 }
@@ -37,46 +61,54 @@ body {
     font-size: 0.8em;
 }
 .addSpeakerChannel {
+    padding: 0px 5px;
     left: 10px;
     top: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
 }
 .saveStateButton {
+    padding: 0px 5px;
     top: 10px;
     right: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
 }
 .copyStateButton {
+    padding: 0px 5px;
     top: 70px;
     right: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
 }
 .reloadStateButton {
+    padding: 0px 5px;
     top: 40px;
     right: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);  
 }
 .startAudioButton {
+    padding: 0px 5px;
     top: 100px;
     left: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);  
 }
 .navbarButton {
     position: fixed;
     z-index: 1000;
 }
 .deviceSelectButton {
-    left: 10px;
-    top: 40px;
-}
-.deviceDropdown {
+    padding: 0px 5px;
     left: 10px;
     top: 70px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);  
+}
+.deviceDropdown {
+    padding: 0px 5px;
+    left: 10px;
+    top: 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
 }
 .speakerChannelSelectorInput {
     width: 2em;
 }
 .deviceInportLabel {
-    display: inline-block;
-    width: 45%;
-    font-size: 0.75em;
-}
-.deviceInport {
-    width: 50%;
-    display: inline-block;
+    display: block;
 }
